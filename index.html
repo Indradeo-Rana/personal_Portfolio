@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indradeo Rana | Portfolio</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Typed.js for the intro role typing effect -->
+    <script
+      src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"
+      defer
+    ></script>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav container">
+        <div class="brand">Indradeo's Portfolio</div>
+
+        <!-- hamburger for mobile -->
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-links">
+          <li>
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#about"><i class="fas fa-user"></i> About</a>
+          </li>
+          <li>
+            <a href="#projects"
+              ><i class="fas fa-project-diagram"></i> Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <!-- Hero / First Section -->
+      <section class="FirstSection container">
+        <div class="LeftSection">
+          <h1>Hi, I'm <span class="purple">Indradeo Rana</span></h1>
+
+          <!-- typing element -->
+          <div id="intro-roles" class="intro-roles">
+            I'm passionate about <span id="element"></span>
+          </div>
+
+          <p class="lead">
+            Welcome to my professional portfolio. I'm a dedicated developer with
+            expertise in web development, Java programming, and microservices
+            architecture. I love creating efficient, scalable solutions that
+            solve real-world problems.
+          </p>
+
+          <div class="resume-buttons">
+            <a
+              href="./Assets/Indradeo_Rana1DS23MC030[C2].pdf"
+              target="_blank"
+              class="btn"
+              >📄 View Resume</a
+            >
+            <a
+              href="./Assets/Indradeo_Rana1DS23MC030[C2].pdf"
+              download="Indradeo_Rana_Resume.pdf"
+              class="btn"
+              >⬇️ Download</a
+            >
+          </div>
+        </div>
+
+        <div class="RightSection">
+          <img
+            src="./Assets/id (3).jpg"
+            alt="Indradeo Rana's Profile Picture"
+            class="profile-pic"
+          />
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- About Section -->
+      <section id="about" class="about-section container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-container">
+          <div class="about-img">
+            <img src="id (3).jpg" alt="Indradeo Rana" />
+          </div>
+
+          <div class="about-content">
+            <div class="about-tabs" role="tablist" aria-label="About tabs">
+              <button
+                class="tab-btn active"
+                data-tab="education"
+                type="button"
+                role="tab"
+                aria-selected="true"
+              >
+                Education
+              </button>
+              <button
+                class="tab-btn"
+                data-tab="experience"
+                type="button"
+                role="tab"
+                aria-selected="false"
+              >
+                Experience
+              </button>
+              <button
+                class="tab-btn"
+                data-tab="skills"
+                type="button"
+                role="tab"
+                aria-selected="false"
+              >
+                Skills
+              </button>
+              <button
+                class="tab-btn"
+                data-tab="hobbies"
+                type="button"
+                role="tab"
+                aria-selected="false"
+              >
+                Hobbies
+              </button>
+            </div>
+
+            <div class="tab-content active" id="education" aria-hidden="false">
+              <div class="education-item">
+                <div class="item-header">
+                  <h3 class="item-title">
+                    Master of Computer Applications (MCA)
+                  </h3>
+                  <span class="item-date">2023 - 2025</span>
+                </div>
+                <p class="item-subtitle">
+                  Dayanada Sagar College Of Engineering, Bangalore
+                </p>
+                <p class="about-text">
+                  Specialized in Advanced Web Technologies, Spring Boot,
+                  Microservices and Cloud Computing. Artificial Intelligence in
+                  Smart Agriculture: Enhancing Efficiency and Sustainability
+                  with Novel Approaches. I'm passionate about AI/ML.
+                </p>
+              </div>
+
+              <div class="education-item">
+                <div class="item-header">
+                  <h3 class="item-title">B.Sc. IT (Information Technology)</h3>
+                  <span class="item-date">2019 - 2022</span>
+                </div>
+                <p class="item-subtitle">Doranda College, Ranchi</p>
+                <p>
+                  Learned fundamentals of programming, algorithms, and database
+                  management systems, Computer Network fundamentals.
+                </p>
+              </div>
+            </div>
+
+            <div class="tab-content" id="experience" aria-hidden="true">
+              <div class="experience-item">
+                <div class="item-header">
+                  <h3 class="item-title">Full Stack Web Developer Intern</h3>
+                  <span class="item-date">2025 - (3 Months)</span>
+                </div>
+                <p class="item-subtitle">Unified Mentor Private Ltd.</p>
+                <p>
+                  Contributed to interactive projects: Memory Game, portfolio
+                  website, Gym Management System, and Catering & Reservation
+                  System. Gained experience in front-end and back-end
+                  development, databases, and deployments.
+                </p>
+              </div>
+
+              <div class="experience-item">
+                <div class="item-header">
+                  <h3 class="item-title">Web Development Intern</h3>
+                  <span class="item-date">2024</span>
+                </div>
+                <p class="item-subtitle">
+                  Gonagoor Technology Solutions Pvt. Ltd.
+                </p>
+                <p>
+                  Worked on front-end with React.js and back-end with Node.js.
+                  Contributed to a ride booking app RDGo.
+                </p>
+              </div>
+            </div>
+
+            <div class="tab-content" id="skills" aria-hidden="true">
+              <div class="skills-container">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">Microservices</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Git</span>
+              </div>
+            </div>
+
+            <div class="tab-content" id="hobbies" aria-hidden="true">
+              <ul class="hobbies-list">
+                <li>Open Source Contribution</li>
+                <li>Photography</li>
+                <li>Hiking & Nature Exploration</li>
+                <li>Learning New Technologies</li>
+                <li>Reading Tech Blogs</li>
+                <li>Playing Chess</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Projects -->
+      <section id="projects" class="projects-section container">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="filter-buttons" role="toolbar" aria-label="Project filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="java">Java</button>
+          <button class="filter-btn" data-filter="microservice">
+            Microservices
+          </button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project cards (kept same content) -->
+          <div class="project-card" data-category="java,fullstack">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1712844775908-53b541754d10?w=500&auto=format&fit=crop&q=60"
+                alt="E-Commerce Dashboard"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Library Database Management System</h3>
+              <p class="project-description">
+                An efficient Library Management System that handles book
+                inventory, member records, and issue/return transactions with
+                real-time tracking.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Servlet/JSP</span>
+                <span class="tech-tag">JavaFX</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JDBC</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link view-details" data-project="1"
+                  ><i class="fas fa-eye"></i> View Details</a
+                >
+                <a href="#" class="project-link outline"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="java,microservice">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52c?auto=format&fit=crop&q=80"
+                alt="Banking Microservice"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Banking Microservice</h3>
+              <p class="project-description">
+                A scalable banking transaction system built with Spring Boot and
+                Kafka, implementing event-driven architecture.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Kafka</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link view-details" data-project="2"
+                  ><i class="fas fa-eye"></i> View Details</a
+                >
+                <a href="#" class="project-link outline"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="web,fullstack">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80"
+                alt="Portfolio Builder"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Personal Portfolio</h3>
+              <p class="project-description">
+                A drag-and-drop portfolio website builder that helps creatives
+                showcase their work without coding knowledge.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Tailwind/ Bootstrap CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link view-details" data-project="3"
+                  ><i class="fas fa-eye"></i> View Details</a
+                >
+                <a href="#" class="project-link outline"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="java,microservice">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
+                alt="Inventory Management System"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Inventory Management</h3>
+              <p class="project-description">
+                Microservice-based inventory system with real-time stock
+                tracking and automated reordering capabilities.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Cloud</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Redis</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link view-details" data-project="4"
+                  ><i class="fas fa-eye"></i> View Details</a
+                >
+                <a href="#" class="project-link outline"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="web,fullstack">
+            <div class="project-img">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1677870728119-52aef052d7ef?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0"
+                alt="Memory Card Game"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Memory Card Game</h3>
+              <p class="project-description">
+                Developed a fully interactive Memory Card Game using HTML, CSS,
+                and JavaScript with timer, move counter, and dual game modes
+                (Emoji & Number). Implemented card-matching logic, animations,
+                and automatic mode-switching to enhance user engagement.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Firebase</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link view-details" data-project="5"
+                  ><i class="fas fa-eye"></i> View Details</a
+                >
+                <a
+                  href="https://github.com/indradeo-rana/memory-card-game"
+                  class="project-link outline"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Modal -->
+        <div class="project-modal" aria-hidden="true">
+          <div class="modal-content">
+            <button class="close-modal" aria-label="Close modal">
+              &times;
+            </button>
+            <img src="" alt="Project Image" class="modal-img" />
+            <h3 class="project-title">Project Title</h3>
+            <div class="project-tech modal-tech"></div>
+            <p class="project-description modal-description"></p>
+            <h4>Key Features</h4>
+            <ul class="features-list"></ul>
+            <h4>Technologies Used</h4>
+            <div class="tech-used"></div>
+            <div class="project-links modal-links"></div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Contact -->
+      <section id="contact" class="contact-section container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="info-content">
+                <h3>Location</h3>
+                <p>Bangalore, India</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <div class="info-content">
+                <h3>Email</h3>
+                <a href="mailto:indradeorana2017@gmail.com"
+                  >indradeorana2017@gmail.com</a
+                >
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="info-content">
+                <h3>Phone</h3>
+                <a href="tel:+916205672514">+91 6205672514</a>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/indradeo-rana-dsce/"
+                class="social-link"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://github.com/Indradeo-Rana"
+                class="social-link"
+                aria-label="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="#" class="social-link" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/i.dr._rana/"
+                class="social-link"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <div
+              class="success-message"
+              id="successMessage"
+              style="display: none"
+            >
+              Thank you! Your message has been sent successfully.
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="from_name"
+                  class="form-control"
+                  placeholder="John Doe"
+                  required
+                />
+                <div class="error-message" id="nameError">
+                  Please enter your name
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="from_email"
+                  class="form-control"
+                  placeholder="john@example.com"
+                  required
+                />
+                <div class="error-message" id="emailError">
+                  Please enter a valid email
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form-control"
+                  placeholder="Regarding project opportunity"
+                  required
+                />
+                <div class="error-message" id="subjectError">
+                  Please enter a subject
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  placeholder="Hello Indradeo, I'd like to discuss..."
+                  required
+                ></textarea>
+                <div class="error-message" id="messageError">
+                  Please enter your message
+                </div>
+              </div>
+
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-container container">
+          <div class="footer-logo">Indradeo Rana</div>
+
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="Indradeo_Rana1DS23MC030[C2].pdf" download>Resume</a>
+          </div>
+
+          <div class="social-links footer-socials">
+            <a
+              href="https://www.linkedin.com/in/indradeo-rana-dsce/"
+              class="social-link"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://github.com/Indradeo-Rana" class="social-link"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/i.dr._rana/" class="social-link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="mailto:indradeorana2017@gmail.com" class="social-link"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+
+          <p class="copyright">
+            © <span id="year"></span> Indradeo Rana. All rights reserved.
+          </p>
+
+          <a href="#home" class="back-to-top"
+            ><i class="fas fa-arrow-up"></i> Back to Top</a
+          >
+        </div>
+      </footer>
+    </main>
+
+    <!-- Main JS (modularized) -->
+    <script src="./JS/main.js" defer></script>
+    <script src="./JS/contact.js" defer></script>
+
+  </body>
+</html>
