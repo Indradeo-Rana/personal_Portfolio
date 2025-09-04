@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "An efficient Library Management System that handles book inventory, member records, and issue/return transactions with real-time tracking.",
       tech: ["Java", "Servlet/JSP", "JavaFX", "MySQL", "JDBC"],
       features: ["Book inventory management", "Member records management", "Issue/return transaction handling", "Real-time tracking"],
-      links: [{ icon: "fab fa-github", text: "View Code", url: "#" }],
+      links: [{ icon: "fab fa-github", text: "View Code", url: "https://github.com/Indradeo-Rana/Library-Management-System.git" }],
     },
     2: {
       title: "Banking Microservice",
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
     3: {
       title: "Personal Portfolio",
       image: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80",
-      description: "A drag-and-drop portfolio website builder.",
+      description: "Designed and developed my personal portfolio website.",
       tech: ["HTML", "CSS", "JS", "Firebase"],
       features: ["Drag-and-drop", "Live preview"],
       links: [{ icon: "fas fa-external-link-alt", text: "Live Demo", url: "#" }],
@@ -218,6 +218,14 @@ document.addEventListener("DOMContentLoaded", () => {
     backToTop.addEventListener("click", (e) => {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  // Fixed Back to Top Button functionality
+  const topBtn = document.getElementById('fixed-top-btn');
+  if (topBtn) {
+    topBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 
