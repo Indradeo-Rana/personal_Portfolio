@@ -90,6 +90,15 @@ document.addEventListener("DOMContentLoaded", () => {
      Project modal (data + events)
      ------------------------- */
   const projectsData = {
+    6: {
+      title: "CloudSharing - File storage $ Sharing App",
+      image: "https://plus.unsplash.com/premium_photo-1770710526963-3e2aaf94345a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xvdWQlMjBzaGFyaW5nfGVufDB8fDB8fHww",
+      description:
+        "A user-friendly cloud storage and file sharing system that allows users to upload, manage, and share files securely, with real-time access control and storage tracking.",
+      tech: ["Java", "Spring Boot", "React", "MongoDB", "Clerk" ,"JWT","Spring Security"],
+      features: ["Easy to upload files", "Easy to share", "Easy to maintain", "Real-time tracking"],
+      links: [{ icon: "fas fa-external-link-alt", text: "Live Demo", url: "https://rainbow-liger-0af62d.netlify.app" }],
+    },
     1: {
       title: "Library Database Management System",
       image: "https://images.unsplash.com/photo-1712844775908-53b541754d10?w=1200&auto=format&fit=crop&q=60",
